@@ -9,7 +9,7 @@ const Form = () => {
   const router = useRouter();
   return (
     <form
-      onSubmit={(e) => handleSubmit(e, router)}
+      onSubmit={(e) => handleSubmit(e, router, avatarId)}
       className="flex flex-col gap-5"
     >
       {/* Avatar */}
@@ -37,8 +37,8 @@ const Form = () => {
             required
           />
         </div>
-        <button className="btn">Login</button>
       </div>
+      <button className="btn">Login</button>
     </form>
   );
 };
